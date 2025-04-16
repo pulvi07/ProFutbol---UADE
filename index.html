@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFutbol</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="img/logo.png" alt="Logo" class="navbar-logo">
+            </div>
+        
+            <div class="navbar-burger" onclick="toggleMobileMenu()">
+                &#9776;
+            </div>
+        
+            <div class="navbar-center desktop-menu">
+                <a href="noticias.html">Noticias</a>
+                <a class="active" href="index.html">Partidos</a>
+                <a href="foro.html">Foro</a>
+                <a href="#">Tienda</a>
+            </div>
+        
+            <div onclick="irLogin()" class="navbar-right">
+                <img src="img/user.png" alt="Usuario" class="navbar-avatar">
+                <span id="registrarseTxt" class="navbar-name">Registrarse</span>
+            </div>
+        </div>
+        
+        <!-- Menú mobile -->
+        <div id="mobile-menu" class="mobile-menu show">
+            <a href="noticias.html">Noticias</a>
+            <a class="active" href="index.html">Partidos</a>
+            <a href="foro.html">Foro</a>
+            <a href="#">Tienda</a>
+        </div>
+
+        <div class="menu-section">
+            <div class="left-sidebar">
+                <div class="menu-item destacado">Destacado</div>
+                <div onclick="mostrarTodo()" class="menu-item">Todo</div>
+                <div onclick="mostrarLiga()" class="menu-item">Liga Profesional</div>
+                <div onclick="mostrarBNacional()" class="menu-item">Prim. B Nacional</div>
+                <div onclick="mostrarLibertadores()" class="menu-item">Libertadores</div>
+                <a href="https://instagram.com/nicopulvii" target="_blank">
+                    <img id="publicidad" src="img/publicidad2.png" alt="Publicidad de Instagram">
+                </a>
+            </div>
+
+            <div class="main-content">
+                <!-- Liga Profesional -->
+                <div id="liga" class="match-section">
+                    <div class="section-header">
+                        <img src="img/liga_profesional.png" alt="Liga Profesional Logo">
+                        Liga Profesional
+                        <img src="img/liga_profesional.png" alt="Liga Profesional Logo">
+                    </div>
+                    <div class="match-row">
+                        <div class="match-time">22:00</div>
+                        <div class="match-team home">
+                            <img src="img/equipos/Boca.png" alt=""> Boca
+                        </div>
+                        <div class="match-team">
+                            River <img src="img/equipos/river.png" alt="">
+                        </div>
+                    </div>
+                    <div class="match-row">
+                        <div class="match-time">22:00</div>
+                        <div class="match-team home">
+                            <img src="img/equipos/estudiantes.png" alt=""> Estudiantes
+                        </div>
+                        <div class="match-team">
+                            Belgrano <img src="img/equipos/belgrano.png" alt="">
+                        </div>
+                    </div>
+                    <div class="section-footer">
+                        <div class="section-info">Sección<br> Liga Profesional</div>
+                        <div class="section-controls">
+                            <div class="control-button">🔊</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Libertadores -->
+                <div id="libertadores" class="match-section">
+                    <div class="section-header">
+                        <img src="img/libertadores.png" alt="Libertadores">
+                        Libertadores
+                        <img src="img/libertadores.png" alt="Libertadores">
+                    </div>
+                    <div class="match-row">
+                        <div class="match-time">22:00</div>
+                        <div class="match-team home">
+                            <img src="img/equipos/Boca.png" alt=""> Boca
+                        </div>
+                        <div class="match-team">
+                            River <img src="img/equipos/river.png" alt="">
+                        </div>
+                    </div>
+                    <div class="match-row">
+                        <div class="match-time">22:00</div>
+                        <div class="match-team home">
+                            <img src="img/equipos/estudiantes.png" alt=""> Estudiantes
+                        </div>
+                        <div class="match-team">
+                            Belgrano <img src="img/equipos/belgrano.png" alt="">
+                        </div>
+                    </div>
+                    <div class="section-footer">
+                        <div class="section-info">Sección<br> Libertadores</div>
+                        <div class="section-controls">
+                            <div class="control-button">🔊</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- B Nacional -->
+                <div id="bNacional" class="match-section">
+                    <div class="section-header">
+                        <img src="img/b_nacional.png" alt="B Nacional">
+                        B Nacional
+                        <img src="img/b_nacional.png" alt="B Nacional">
+                    </div>
+                    <div class="match-row">
+                        <div class="match-time">22:00</div>
+                        <div class="match-team home">
+                            <img src="img/equipos/Boca.png" alt=""> Boca
+                        </div>
+                        <div class="match-team">
+                            River <img src="img/equipos/river.png" alt="">
+                        </div>
+                    </div>
+                    <div class="match-row">
+                        <div class="match-time">22:00</div>
+                        <div class="match-team home">
+                            <img src="img/equipos/estudiantes.png" alt=""> Estudiantes
+                        </div>
+                        <div class="match-team">
+                            Belgrano <img src="img/equipos/belgrano.png" alt="">
+                        </div>
+                    </div>
+                    <div class="section-footer">
+                        <div class="section-info">Sección<br> B Nacional</div>
+                        <div class="section-controls">
+                            <div class="control-button">🔊</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
