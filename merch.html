@@ -4,9 +4,9 @@
     <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" rel="stylesheet">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemerch.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
@@ -42,15 +42,13 @@
             <a href="#">Tienda</a>
         </div>
         <div class="god">
-        <div id="izq">   
-            
-            <h1 >Tipos de productos</h1>
-            <p id="filtrar">Filtrar por:</p>
-            <ul class="list">
-                <li><button class="button-list">Todos (3)</button></li>
-                <li><button class="button-list">Remeras (1)</button></li>
-                <li><button class="button-list">Pantalon (1)</button></li>
-                <li> <button class="button-list">Buzos y camperas (1)</button></li>
+            <div class="menu-section">
+                <div class="left-sidebar">
+                    <div class="menu-item-destacado">Productos</div>
+                    <div onclick="mostrarTodo()" class="menu-item">Todo</div>
+                    <div onclick="mostrarRemeras()" class="menu-item">Remeras</div>
+                    <div onclick="mostrarBuzosycamperas()" class="menu-item">Buzos/Camperas</div>
+                    <div onclick="mostrarPantalones()" class="menu-item">Pantalones</div>
         </div>
         <div id="der">
             <div class="product buzo">

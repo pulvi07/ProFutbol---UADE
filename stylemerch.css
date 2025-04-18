@@ -11,7 +11,32 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
 
+    .navbar-burger {
+        display: block;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+    }
+}
+
+.navbar-name {
+    font-weight: 600;
+}
+
+.navbar-logo {
+    width: 180px;
+    height: auto;
+}
+
+.menu-section {
+    display: flex;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -99,14 +124,43 @@ body {
     padding: 0;
     text-align: center;
 }
-#izq {
-    width: 20%;
-    padding: 10px;
-    text-align: center;
+.menu-section {
+    display: flex;
+}
+
+.left-sidebar {
+    width: 230px;
+    padding: 15px;
+}
+.menu-item {
+    background-color: #1a73e8;
+    padding: 10px 15px;
+    margin-bottom: 10px;
     color: #fff;
-    border: 0px solid #fff;
-    border-radius: 10px;
-    background-color: #023b1f;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #5393ff;
+}
+
+.menu-item-destacado {
+    background-color: #000000;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+    color: #ffff00;
+    font-weight: bold;
+}
+
+.menu-item-destacado::before {
+    content: "★";
+    margin-right: 5px;
 }
 #der {
     width: 80%;
@@ -141,7 +195,7 @@ body {
 
 .product {
     width: 200px;
-    height: 450px;
+    height: fit-content;
     margin: 10px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
